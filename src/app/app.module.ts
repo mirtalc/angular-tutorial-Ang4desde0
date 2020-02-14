@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { DataactualComponent } from './dataactual/dataactual.component';
 import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component';
+import { InterpolarmetodoComponent } from './interpolarmetodo/interpolarmetodo.component';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -19,7 +20,8 @@ import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component';
         AppComponent,
         CopyrightComponent,
         DataactualComponent,
-        ViewmodeloComponent
+        ViewmodeloComponent,
+        InterpolarmetodoComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [
