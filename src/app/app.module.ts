@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CopyrightComponent } from './copyright/copyright.component';
+import { DataactualComponent } from './dataactual/dataactual.component';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -15,7 +16,8 @@ import { CopyrightComponent } from './copyright/copyright.component';
     // declarations a.k.a. vistes d'un mòdul. Poden ser directives, components o pipes
     declarations: [
         AppComponent,
-        CopyrightComponent
+        CopyrightComponent,
+        DataactualComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [
