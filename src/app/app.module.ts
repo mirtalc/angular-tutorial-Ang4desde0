@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { DataactualComponent } from './dataactual/dataactual.component';
+import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -17,7 +18,8 @@ import { DataactualComponent } from './dataactual/dataactual.component';
     declarations: [
         AppComponent,
         CopyrightComponent,
-        DataactualComponent
+        DataactualComponent,
+        ViewmodeloComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [
