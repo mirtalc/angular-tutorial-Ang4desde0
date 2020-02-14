@@ -12,6 +12,10 @@ import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component';
 import { InterpolarmetodoComponent } from './interpolarmetodo/interpolarmetodo.component';
 import { ExpropertybindingComponent } from './expropertybinding/expropertybinding.component';
 import { ExeventbindingComponent } from './exeventbinding/exeventbinding.component';
+import { ExtwowaybindingComponent } from './extwowaybinding/extwowaybinding.component';
+
+// Import FormsModule in order to use [(ngModel)]
+import { FormsModule } from '@angular/forms';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -25,12 +29,14 @@ import { ExeventbindingComponent } from './exeventbinding/exeventbinding.compone
         ViewmodeloComponent,
         InterpolarmetodoComponent,
         ExpropertybindingComponent,
-        ExeventbindingComponent
+        ExeventbindingComponent,
+        ExtwowaybindingComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule
     ],
     // providers a.k.a. servicis disponibles per a tot component del Module
     providers: [],
