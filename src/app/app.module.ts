@@ -10,6 +10,7 @@ import { CopyrightComponent } from './copyright/copyright.component';
 import { DataactualComponent } from './dataactual/dataactual.component';
 import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component';
 import { InterpolarmetodoComponent } from './interpolarmetodo/interpolarmetodo.component';
+import { ExpropertybindingComponent } from './expropertybinding/expropertybinding.component';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -21,7 +22,8 @@ import { InterpolarmetodoComponent } from './interpolarmetodo/interpolarmetodo.c
         CopyrightComponent,
         DataactualComponent,
         ViewmodeloComponent,
-        InterpolarmetodoComponent
+        InterpolarmetodoComponent,
+        ExpropertybindingComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [
