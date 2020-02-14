@@ -11,6 +11,7 @@ import { DataactualComponent } from './dataactual/dataactual.component';
 import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component';
 import { InterpolarmetodoComponent } from './interpolarmetodo/interpolarmetodo.component';
 import { ExpropertybindingComponent } from './expropertybinding/expropertybinding.component';
+import { ExeventbindingComponent } from './exeventbinding/exeventbinding.component';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -23,7 +24,8 @@ import { ExpropertybindingComponent } from './expropertybinding/expropertybindin
         DataactualComponent,
         ViewmodeloComponent,
         InterpolarmetodoComponent,
-        ExpropertybindingComponent
+        ExpropertybindingComponent,
+        ExeventbindingComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [
