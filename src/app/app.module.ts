@@ -21,6 +21,7 @@ import { ExdirectivaclassComponent } from './exdirectivaclass/exdirectivaclass.c
 import { ExdirectivaforComponent } from './exdirectivafor/exdirectivafor.component';
 import { PareComponent } from './pare/pare.component';
 import { FillComponent } from './fill/fill.component';
+import { ExpipesComponent } from './expipes/expipes.component';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -40,7 +41,8 @@ import { FillComponent } from './fill/fill.component';
         ExdirectivaclassComponent,
         ExdirectivaforComponent,
         PareComponent,
-        FillComponent
+        FillComponent,
+        ExpipesComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [
