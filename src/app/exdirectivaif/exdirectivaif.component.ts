@@ -8,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class ExdirectivaifComponent implements OnInit {
     // Atributs
     public nomdirectivaif: string = "";
+    public nomdirectivaifElse: string = "";
+    public suma: number;
 
     constructor() { }
 
     ngOnInit(): void {
     }
 
+    validarSuma(): boolean {
+        return this.suma == 5 ? true : false;
+    }
 }

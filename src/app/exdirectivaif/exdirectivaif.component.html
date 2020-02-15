@@ -1,7 +1,35 @@
 <div>
+    <p class="titol">Versió 1: amb if</p>
     <label>Nom i cognoms </label>
     <input type="text" [(ngModel)]="nomdirectivaif" placeholder=" Escriu nom i cognoms">
     <br>
     <br>
     <button class="btn btn-dark" *ngIf="nomdirectivaif">Enviar dades</button>
+</div>
+
+<div>
+    <p class="titol">Versió 2: amb if-else</p>
+    <label>Nom i cognoms </label>
+    <input type="text" [(ngModel)]="nomdirectivaifElse" placeholder=" Escriu nom i cognoms">
+    <br>
+    <br>
+    <button class="btn btn-dark" *ngIf="nomdirectivaifElse; else desactivat">Enviar dades</button>
+    <ng-template #desactivat>
+        <button class="btn btn-dark" disabled>Enviar (desactivat)</button>
+    </ng-template>
+</div>
+
+<div>
+    <p class="titol">Versió 3: amb if-else i mètodes</p>
+    <p>Quant són 2+2 segons Radiohead i George Orwell?</p>
+    <input type="text" [(ngModel)]="suma" placeholder="Escriu la resposta">
+    <br>
+    <p *ngIf="!suma; else correcte">Per favor, respon alguna cosa.</p>
+    <br>
+    <ng-template #correcte>
+        <h6 *ngIf="validarSuma(); else incorrecte">Correcte!</h6>
+    </ng-template>
+    <ng-template #incorrecte>
+        <h6>Incorrecte! Torna a provar.</h6>
+    </ng-template>
 </div>
