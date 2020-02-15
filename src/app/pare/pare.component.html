@@ -1,0 +1,10 @@
+<div class="pare">
+    <p class="pare__titol">Component pare</p>
+
+    <div class="pare__content">
+        <p>1. Amb un únic fill: </p>
+        <app-fill [atributFill]="atributPare"></app-fill>
+        <p>2. Ara amb un array del pare: </p>
+        <app-fill *ngFor="let itemPare of arrayPare" [atributFill]="itemPare"></app-fill>
+    </div>
+</div>

@@ -19,6 +19,8 @@ import { FormsModule } from '@angular/forms';
 import { ExdirectivaifComponent } from './exdirectivaif/exdirectivaif.component';
 import { ExdirectivaclassComponent } from './exdirectivaclass/exdirectivaclass.component';
 import { ExdirectivaforComponent } from './exdirectivafor/exdirectivafor.component';
+import { PareComponent } from './pare/pare.component';
+import { FillComponent } from './fill/fill.component';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -36,7 +38,9 @@ import { ExdirectivaforComponent } from './exdirectivafor/exdirectivafor.compone
         ExtwowaybindingComponent,
         ExdirectivaifComponent,
         ExdirectivaclassComponent,
-        ExdirectivaforComponent
+        ExdirectivaforComponent,
+        PareComponent,
+        FillComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [

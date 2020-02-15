@@ -1,0 +1,13 @@
+.pare{
+    $color: orange;
+
+    &__titol{
+        color: $color;
+        font-size: 2em;
+    }
+
+    &__content{
+        border: 1px solid $color;
+        padding: 10px;
+    }
+}
