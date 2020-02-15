@@ -4,7 +4,19 @@
     <div class="pare__content">
         <p>1. Amb un únic fill: </p>
         <app-fill [atributFill]="atributPare"></app-fill>
+        <hr>
+
         <p>2. Ara amb un array del pare: </p>
-        <app-fill *ngFor="let itemPare of arrayPare" [atributFill]="itemPare"></app-fill>
+        <app-fill *ngFor="let itemPare of arrayPare" 
+                  [atributFill]="itemPare">
+        </app-fill>
+        <hr>
+
+        <p>3. Ara usant @Output</p>
+        <app-fill *ngFor="let itemPare of arrayPare"
+                  [atributFill]="itemPare"
+                  (emitterFill)="updateNovetat($event)">
+        </app-fill>
+        <h3>Novetats amb @Output: {{ novetat }}</h3>        
     </div>
 </div>

@@ -1,1 +1,17 @@
-<p class="fill">Sóc el fill. Tinc este atributFill (rellenat pel pare): <span>{{ atributFill }}</span></p>
+<!-- <p class="fill">Sóc el fill. Tinc este atributFill (rellenat pel pare): <span>{{ atributFill }}</span></p> -->
+
+<div class="fill">
+    <h5 [ngClass]="{descartat: llegit==true}">{{ atributFill }}</h5>
+
+    <button *ngIf="llegit==false" 
+            class="btn btn-success"
+            (click)="toggleLlegit(); detectar($event)">
+            Marcar com a llegit
+    </button>
+
+    <button *ngIf="llegit==true" 
+            class="btn btn-danger"
+            (click)="toggleLlegit(); detectar($event)">
+            Desmarcar com a llegit
+    </button>
+</div>

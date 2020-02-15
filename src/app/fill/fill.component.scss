@@ -4,6 +4,15 @@
     color: green;
 }
 
+.fill > *{
+    display: inline-block;
+    margin-right: 20px;
+}
+
 span{
     font-style: italic;
+}
+
+.descartat {
+    text-decoration: line-through;
 }
