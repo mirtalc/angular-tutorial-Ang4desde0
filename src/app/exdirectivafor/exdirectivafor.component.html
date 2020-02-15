@@ -1,0 +1,26 @@
+<p>Llista dels cursos disponibles</p>
+<ul>
+    <li *ngFor="let curso of cursos">
+        {{ curso }}
+    </li>
+</ul>
+
+<p>Llista dels alumnes matriculats</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>cognoms</th>
+            <th>ciutat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let alumne of alumnes">
+            <td>{{ alumne.id }}</td>
+            <td>{{ alumne.nom }}</td>
+            <td>{{ alumne.cognoms }}</td>
+            <td>{{ alumne.ciutat }}</td>
+        </tr>
+    </tbody>
+</table>
