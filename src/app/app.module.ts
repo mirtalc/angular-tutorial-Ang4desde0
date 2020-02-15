@@ -17,6 +17,7 @@ import { ExtwowaybindingComponent } from './extwowaybinding/extwowaybinding.comp
 // Import FormsModule in order to use [(ngModel)]
 import { FormsModule } from '@angular/forms';
 import { ExdirectivaifComponent } from './exdirectivaif/exdirectivaif.component';
+import { ExdirectivaclassComponent } from './exdirectivaclass/exdirectivaclass.component';
 
 /**
  * 2. Decorador del Module amb metadata
@@ -32,7 +33,8 @@ import { ExdirectivaifComponent } from './exdirectivaif/exdirectivaif.component'
         ExpropertybindingComponent,
         ExeventbindingComponent,
         ExtwowaybindingComponent,
-        ExdirectivaifComponent
+        ExdirectivaifComponent,
+        ExdirectivaclassComponent
     ],
     // dependències (l'origen està a la primera secció amb el imports)
     imports: [

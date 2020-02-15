@@ -1,0 +1,14 @@
+<p>Introduïx la nota de l'alumne per a saber si ha aprovat</p>
+<input type="text" [(ngModel)]="nota" placeholder="Escriu la nota">
+
+<div class="resultats" *ngIf="nota">
+    <h6 *ngIf="nota >= 0 && nota <= 10; else error" 
+        [ngClass]="{aprovat: nota >=5,
+                    suspes: nota <=5 }">Tens un {{ nota }}...
+    </h6>
+
+    <ng-template #error>
+        <h6 *ngIf="nota > 10" class="warning">La nota no pot ser tan alta! Màxim, 10.</h6>
+        <h6 *ngIf="nota < 0" class="warning">La nota no pot ser tan baixa! Mínim, 0.</h6>
+    </ng-template>
+</div>
